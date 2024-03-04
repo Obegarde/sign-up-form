@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset end*/
+
+@font-face {
+    font-family: "norse-bold";
+    src: url(fonts/norse-bold-webfont.woff)format('woff');
+    src: url(fonts/norse-bold-webfont.woff2)format('woff2');
+}
+
+:root{
+    --create-button:#596D48;
+    --default-input-border:#E5E7EB;
+    --main-background:#f9fafb;
+    --width-left:33.3vw;
+    --height-right:calc(100vh/3);
+}
+
+
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
+}
+.column.left{
+    background-image: url(images/photo-1585202900225-6d3ac20a6962.avif);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: var(--width-left);
+}
+footer{
+    color: white;
+    align-self: center;
+    margin: 0.8rem;
+}
+footer a:link{
+    color: white;
+}
+footer a:visited{
+    color:hotpink;
+}
+
+.logo{
+
+    background: rgb(0 0 0 / 40%);
+    margin-top: 10rem;
+    
+}
+.logo img{
+    height:7rem;
+}
+.logoContents{
+    display: flex;
+    font-size: 8rem;
+    justify-content: center;
+    margin: 3rem;
+    font-family: "norse-bold",Arial, Helvetica, sans-serif;
+}
+
+.column.right{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - var(--width-left));
+
+}
+.column.right>div{
+    height: var(--height-right);
+}
+
+.accent{
+    background-color: var(--main-background);
+   
+}
+.copyText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+}
+em {font-style: italic;}
+
+.calltoaction{
+    display: block;
+}
+
+.hero-text{
+    margin:2rem 16rem 2rem 2rem;
+}
+.signup-text{
+    margin:1rem 16rem 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.signup-inputs{
+    display: flex;
+    margin:1rem 16rem 1rem 2rem;
+    
+}
+
+.signup-column>p{
+    display: flex;
+    flex-direction: column;
+    margin:1rem 3rem 1rem 0;
+}
+
+label{
+    font-weight: bold;
+    color: #1f2937;
+}
+
+input{
+    border: 2px solid lightgrey;
+    height: 1.5rem;
+    width: 15rem;
+    border-radius: 5px;
+}
+input:focus{
+    border:3px solid #1d4ed8;
+    box-shadow: 3px 3px 3px lightgrey;
+
+}
+
+
+
+button{
+    background-color: var(--create-button);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.account{
+    margin:2rem 16rem 2rem 2rem;
+}
+
+a{
+    color: var(--create-button);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-form{
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 3px 5px lightgrey;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="column left">
+        <div class="logo">
+            <div class="logoContents">
+            <img src="images/odin-lined.png" alt="The Odin Project logo"/>
+            <p>ODIN</p>
+            </div>
+        </div>
+        <footer>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></footer>
+    </div>
+    <div class="column right">
+        <div class="copyText accent">
+            <p class="hero-text">
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            <span class="calltoaction">Sign up <em>now</em> to get started.</span>
+            </p>
+            <p class="hero-text">
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        
+        <div class="signup-form">
+            <div class="signup-text">Let's do this!</div>
+            <form action="https://www.httpbin.org/post" method="post">
+                <div class="signup-inputs">
+                    <div class="signup-column">
+                    <p>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" required/>
+                    </p>
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required/>
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <input class="error" type="password" name="password" id="password" required/>
+                    </p>
+                </div>
+                <div class="signup-column">
+                    <p>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" required/>
+                    </p>
+                    <p>
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required/>
+                    </p>
+                    
+                    <p>
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input class="error" type="password" name="confirmPassword" id="confirmPassword" required\>
+                    </p>
+                </div>
+            </div>
+               
+            
+            
+        </div>
+        <div class="accent">
+            <div class="account">
+            <p>
+                <button type="submit">Create Account</button>
+            </p>
+            <p class="existingAccount">
+                <div>Already have an account? <a href="">Log in</a></div>
+            </p>
+        </form>
+    </div>
+        </div>
+
+    </div>
+</body>
+</html>
