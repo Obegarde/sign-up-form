@@ -61,6 +61,7 @@ table {
     --main-background:#f9fafb;
     --width-left:33.3vw;
     --height-right:calc(100vh/3);
+    --marginOne:3vh 10vw 3vh 3vw;
 }
 
 
@@ -138,16 +139,16 @@ em {font-style: italic;}
 }
 
 .hero-text{
-    margin:2rem 16rem 2rem 2rem;
+    margin:var(--marginOne);
 }
 .signup-text{
-    margin:1rem 16rem 1rem 2rem;
+    margin:var(--marginOne);
     font-size: 2rem;
     font-weight: bold;
 }
 .signup-inputs{
     display: flex;
-    margin:1rem 16rem 1rem 2rem;
+    margin:var(--marginOne);
     
 }
 
@@ -188,7 +189,7 @@ button{
 }
 
 .account{
-    margin:2rem 16rem 2rem 2rem;
+    margin:var(--marginOne);
 }
 
 a{
